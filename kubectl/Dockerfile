@@ -6,5 +6,5 @@ RUN curl -L https://storage.googleapis.com/kubernetes-release/release/v1.25.2/bi
 
 RUN apk del --purge deps && rm /var/cache/apk/*
 
-ENTRYPOINT ["tail"]
-CMD ["-f","/dev/null"]
+CMD ["/bin/sh"]
+
